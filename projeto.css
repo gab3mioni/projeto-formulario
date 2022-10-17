@@ -25,6 +25,11 @@ body{
     height: 100vh;
 }
 
+#subtitulo{
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
 .content{
     background-color: var(--color-dark2);
     padding: 2rem;
@@ -96,9 +101,4 @@ button[type="submit"]:hover{
         flex-direction: column;
         gap: 5px;
     }
-}
-
-#subtitulo{
-    margin-left: 25%;
-    margin-bottom: 2%;
 }
