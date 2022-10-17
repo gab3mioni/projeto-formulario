@@ -12,35 +12,56 @@
     <link rel="stylesheet" href="projeto.css">
     
     <!-- titulo do site -->
-    <title>Formulários para Desenvolvedores</title>
+    <title>Cadastro Dev's</title>
 
 </head>
 
 <!-- textos dentro do corpo do site -->
 <body>
     <div class="content">
+
         <!-- titulo e subtitulo do corpo do site -->
+
         <h1 id="titulo">Cadastro de Desenvolvedores</h1>
         <p id="subtitulo">Complete com suas informações abaixo</p>
+
+        <!-- opções para nome, email, senha, genero, especialidade, entre outros -->
         <form id="form">
+
+            <!-- nome -->
             <div>
                 <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
                 <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
             </div>
+
+            <!-- email -->
+            
             <div>
                 <input type="email" placeholder="Digite seu melhor email" class="inputs required" oninput="emailValidate()">
                 <span class="span-required">Digite um email válido</span>
             </div>
+
+            <!-- senha -->
+
             <div>
                 <input type="password" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()">
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
             </div>
+
+            <!-- repetir senha -->
+
             <div>
                 <input type="password" placeholder="Repita a sua senha" class="inputs required" oninput="comparePassword()">
                 <span class="span-required">Senhas devem ser compatíveis</span>
             </div>
+
+            <!-- descrição pessoal -->
+
             <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre você..."></textarea>
-            <p>Sexo:</p>
+
+            <!-- genero-->
+
+            <h4> <p>Gênero:</p> </h4>
             <div class="box-select">
                 <div>
                     <input type="radio" id="m" value="m" name="sexo">
@@ -55,7 +76,28 @@
                     <label for="o">Outro</label>
                 </div>
             </div>
-            <p>Quais suas experiências ?</p>
+
+            <!-- senioridade -->
+
+            <h4> <p>Qual sua Senioridade?</p> </h4>
+            <div class="box-select">
+                <div>
+                    <input type="checkbox" id="junior" value="junior" name="senioridade">
+                    <label for="junior">Junior</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pleno" value="pleno" name="senioridade">
+                    <label for="pleno">Pleno</label> 
+                </div>
+                <div>
+                    <input type="checkbox" id="senior" value="senior" name="senioridade">
+                    <label for="senior">Sênior</label> 
+                </div>
+            </div>
+
+            <!-- linguagens -->
+            
+            <h4> <p>Quais suas experiências ?</p> </h4>
             <div class="box-select">
                 <div>
                     <input type="checkbox" id="html" value="html" name="experiencias">
@@ -85,8 +127,13 @@
                     <input type="checkbox" id="lua" value="lua" name="experiencias">
                     <label for="lua">Lua</label>
                 </div>
+
+            <!-- botão enviar -->
+
             </div>
             <button type="submit">Enviar</button>
+
+            <!-- fim do formulario-->
         </form>
     </div>
 </body>
